@@ -1,0 +1,21 @@
+---
+title: "Exploratory Data Analysis on Eurostat Crime in The Year 2019"
+author: "Akolade Sofiyyah Iwalewa,22201441"
+date: "2022-11-11"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction to dataset
+The Eurostat crime dataset contains information about recorded offences by offence category in 41 European Countries in 2019. The recorded offences includes: 
+
+# Load the data
+```{r}
+crime2019 <- read.csv("EurostatCrime2019.csv", 
+  header = TRUE, # first row contains column names
+  row.names = 1) # first column contains country names
+```
+
